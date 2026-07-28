@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>SanctionGuard™ — 장병 전용 암호화폐 OTC 안전거래 조회 앱</title>
+  <meta name="description" content="글로벌 OTC 장외거래 세계 2위 한국. 장병의 암호화폐 거래를 Chainalysis 기반 세계 최고 수준으로 보호합니다. 텔레그램·카카오톡으로 즉시 조회."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ══════ NAVBAR ══════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon"><i class="fas fa-shield-halved"></i></span>
+      <span class="logo-text">Sanction<span class="accent">Guard</span>™</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#crisis">위기 현황</a></li>
+      <li><a href="#otc">OTC 위험</a></li>
+      <li><a href="#solution">솔루션</a></li>
+      <li><a href="#how">이용방법</a></li>
+      <li><a href="#features">주요기능</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#cta" class="nav-cta"><i class="fas fa-shield-halved"></i> 무료 시작</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="메뉴">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════ HERO ══════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-particles" id="heroParticles"></div>
+  <div class="container hero-grid">
+    <!-- LEFT -->
+    <div class="hero-content fade-in">
+      <div class="hero-alert-badge">
+        <i class="fas fa-radiation"></i>
+        <span>긴급 경보 · 한국, OTC 자금세탁 <strong>세계 2위</strong></span>
+        <span class="blink-dot"></span>
+      </div>
+      <h1 class="hero-title">
+        장병 여러분,<br/>
+        <span class="highlight-red">지금 이 순간에도</span><br/>
+        위험에 노출되어 있습니다
+      </h1>
+      <p class="hero-sub">
+        전 세계 암호화폐 거래의 <strong class="text-cyan">80% 이상</strong>이 안전망 없는 <strong class="text-red">장외거래(OTC)</strong>에서 발생합니다.<br/>
+        한국은 그 중에서도 <strong class="text-red">OTC 자금세탁 세계 2위</strong> 국가.<br/>
+        <strong>SANCTIONGUARD™</strong>는 장병의 모든 OTC 거래를 사전에 스크리닝합니다.
+      </p>
+
+      <!-- 핵심 지표 4개 -->
+      <div class="hero-kpi-grid">
+        <div class="kpi-card kpi-danger">
+          <div class="kpi-icon"><i class="fas fa-globe"></i></div>
+          <div class="kpi-val">$1.4조</div>
+          <div class="kpi-label">글로벌 OTC 연간 거래 규모</div>
+        </div>
+        <div class="kpi-card kpi-warning">
+          <div class="kpi-icon"><i class="fas fa-ranking-star"></i></div>
+          <div class="kpi-val">세계 2위</div>
+          <div class="kpi-label">한국 OTC 자금세탁 세계 순위</div>
+        </div>
+        <div class="kpi-card kpi-alert">
+          <div class="kpi-icon"><i class="fas fa-triangle-exclamation"></i></div>
+          <div class="kpi-val">80%+</div>
+          <div class="kpi-label">전체 암호화폐 거래 중 OTC 비중</div>
+        </div>
+        <div class="kpi-card kpi-safe">
+          <div class="kpi-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="kpi-val">0건</div>
+          <div class="kpi-label">SanctionGuard™ 거래 후 피해</div>
+        </div>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#cta" class="btn btn-primary btn-glow">
+          <i class="fas fa-shield-halved"></i> 무료로 시작하기
+        </a>
+        <a href="#otc" class="btn btn-outline">
+          <i class="fas fa-circle-info"></i> OTC 위험 알아보기
+        </a>
+      </div>
+      <div class="hero-trust-row">
+        <span class="trust-chip"><i class="fas fa-link chain-color"></i> Chainalysis 공식 파트너</span>
+        <span class="trust-chip"><i class="fab fa-telegram tg-color"></i> 텔레그램 지원</span>
+        <span class="trust-chip"><i class="fas fa-comment-dots kk-color"></i> 카카오톡 지원</span>
+      </div>
+    </div>
+
+    <!-- RIGHT — 폰 목업 -->
+    <div class="hero-phone fade-in delay-2">
+      <div class="phone-wrap">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <!-- App header -->
+            <div class="app-bar">
+              <span><i class="fas fa-shield-halved"></i> SanctionGuard™</span>
+              <span class="live-dot"><i class="fas fa-circle"></i> LIVE</span>
+            </div>
+            <!-- Warning card -->
+            <div class="app-warn-card">
+              <i class="fas fa-triangle-exclamation"></i>
+              <span>OTC 장외거래 위험 감지 시스템 <strong>가동중</strong></span>
+            </div>
+            <!-- Chat screen -->
+            <div class="app-chat">
+              <div class="ac-bot">
+                <div class="ac-av"><i class="fas fa-shield-halved"></i></div>
+                <div class="ac-bub bot">지갑 주소 또는 거래 정보를 입력하면 즉시 제재 조회를 시작합니다. 🛡️</div>
+              </div>
+              <div class="ac-user">
+                <div class="ac-bub user">0xA1b2C3d4…F5e6</div>
+              </div>
+              <div class="ac-bot">
+                <div class="ac-av"><i class="fas fa-shield-halved"></i></div>
+                <div class="ac-bub bot scan">🔍 12개 제재 DB 실시간 분석 중…</div>
+              </div>
+              <div class="ac-bot">
+                <div class="ac-av"><i class="fas fa-shield-halved"></i></div>
+                <div class="ac-result">
+                  <div class="ar-title"><i class="fas fa-check-circle"></i> 조회 완료</div>
+                  <div class="ar-checks">
+                    <span class="ar-ok"><i class="fas fa-check"></i> OFAC</span>
+                    <span class="ar-ok"><i class="fas fa-check"></i> UN</span>
+                    <span class="ar-ok"><i class="fas fa-check"></i> EU</span>
+                    <span class="ar-ok"><i class="fas fa-check"></i> HMT</span>
+                  </div>
+                  <div class="ar-score">위험도: <strong class="safe-txt">낮음 98/100</strong></div>
+                  <div class="ar-clear">🟢 CLEAR — 안전한 거래 가능</div>
+                </div>
+              </div>
+            </div>
+            <div class="app-input">
+              <input type="text" placeholder="지갑주소 · TG 계정 입력…" readonly/>
+              <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="phone-glow-red"></div>
+        <div class="phone-glow-blue"></div>
+        <!-- Floating badges -->
+        <div class="float-badge fb-top">
+          <i class="fas fa-link"></i> Chainalysis Partner
+        </div>
+        <div class="float-badge fb-mid">
+          <i class="fab fa-telegram"></i> Telegram
+        </div>
+        <div class="float-badge fb-bot">
+          <i class="fas fa-comment-dots"></i> KakaoTalk
+        </div>
+      </div>
+    </div>
+  </div><!-- /hero-grid -->
+  <div class="scroll-hint"><i class="fas fa-chevron-down bounce"></i></div>
+</section>
+
+<!-- ══════ ALERT TICKER ══════ -->
+<div class="ticker-wrap">
+  <div class="ticker-track" id="tickerTrack">
+    <span>⚠️ 한국 OTC 자금세탁 세계 2위</span>
+    <span>🌐 글로벌 OTC 시장 연 $1.4조</span>
+    <span>🔴 전체 거래의 80%가 규제 공백 OTC</span>
+    <span>📡 텔레그램 — 전 세계 최대 OTC 거래 채널</span>
+    <span>🛡️ SanctionGuard™ — Chainalysis 한국 공식 파트너 개발</span>
+    <span>⚡ 실시간 12개 제재 DB 조회 · 응답 &lt; 1초</span>
+    <span>💬 카카오톡 챗봇으로 누구나 즉시 조회 가능</span>
+    <span>🎖️ 장병 전용 · 완전 무료 · 2025년 5월 출시</span>
+  </div>
+</div>
+
+<!-- ══════ CRISIS SECTION ══════ -->
+<section class="section crisis-section" id="crisis">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-badge danger-badge"><i class="fas fa-radiation"></i> 위기 현황</div>
+      <h2>장병 여러분, <span class="highlight-red">이것이 현실입니다</span></h2>
+      <p>한국은 암호화폐 강국인 동시에, 규제 사각지대인 OTC 장외거래를 통한 자금세탁 세계 2위 국가입니다.<br/>지금 이 순간에도 수많은 장병들이 알지 못한 채 위험에 노출되고 있습니다.</p>
+    </div>
+
+    <!-- 위기 통계 4종 -->
+    <div class="crisis-grid fade-in">
+      <div class="crisis-card cc-red">
+        <div class="cc-num" data-target="1.4" data-suffix="조$">0</div>
+        <div class="cc-title">글로벌 OTC 연간 거래 규모</div>
+        <div class="cc-desc">2024년 기준 전 세계 암호화폐 장외거래(OTC) 시장 규모. 거래소 거래를 압도하는 수준으로 안전망은 전무합니다.</div>
+        <div class="cc-badge"><i class="fas fa-arrow-trend-up"></i> 2024년 전년比 +100% 급증</div>
+      </div>
+      <div class="crisis-card cc-orange">
+        <div class="cc-num" data-target="2" data-suffix="위">0</div>
+        <div class="cc-title">한국 OTC 자금세탁 세계 순위</div>
+        <div class="cc-desc">Chainalysis 보고서 기준, 한국은 글로벌 OTC 암호화폐 자금세탁 세계 2위 국가입니다. 장병의 거래가 범죄에 악용될 수 있습니다.</div>
+        <div class="cc-badge"><i class="fas fa-flag"></i> 국제 수사기관 집중 감시 대상</div>
+      </div>
+      <div class="crisis-card cc-yellow">
+        <div class="cc-num" data-target="80" data-suffix="%">0</div>
+        <div class="cc-title">전체 거래 중 OTC 비중</div>
+        <div class="cc-desc">전 세계 암호화폐 거래의 80% 이상이 규제 공백 지대인 OTC에서 이루어집니다. 거래소처럼 안전장치가 없습니다.</div>
+        <div class="cc-badge"><i class="fas fa-triangle-exclamation"></i> 안전망 0% — 완전 무방비</div>
+      </div>
+      <div class="crisis-card cc-purple">
+        <div class="cc-num" data-target="900" data-suffix="만">0</div>
+        <div class="cc-title">텔레그램 일일 OTC 거래 건수</div>
+        <div class="cc-desc">텔레그램은 전 세계 최대 OTC 암호화폐 거래 채널입니다. 장병들이 가장 많이 접하는 플랫폼에서 거래가 이루어집니다.</div>
+        <div class="cc-badge"><i class="fab fa-telegram"></i> 전 세계 최대 OTC 거래 플랫폼</div>
+      </div>
+    </div>
+
+    <!-- 장병 경각심 -->
+    <div class="soldier-warning fade-in">
+      <div class="sw-header">
+        <i class="fas fa-user-shield"></i>
+        <h3>장병이 특히 위험한 이유</h3>
+      </div>
+      <div class="sw-grid">
+        <div class="sw-item">
+          <div class="sw-icon ri"><i class="fas fa-mobile-screen"></i></div>
+          <div class="sw-content">
+            <strong>스마트폰 자유 사용 + 정보 부족</strong>
+            <p>여가 시간 스마트폰 사용은 자유롭지만, OTC 장외거래의 위험성에 대한 교육과 정보가 극히 부족합니다.</p>
+          </div>
+        </div>
+        <div class="sw-item">
+          <div class="sw-icon ri2"><i class="fab fa-telegram"></i></div>
+          <div class="sw-content">
+            <strong>텔레그램 OTC 채널 무방비 노출</strong>
+            <p>텔레그램 내 비공개 OTC 거래 채널은 제재 대상·자금세탁·사기꾼들의 주요 활동 무대. 장병들이 모르고 참여할 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="sw-item">
+          <div class="sw-icon ri3"><i class="fas fa-scale-unbalanced"></i></div>
+          <div class="sw-content">
+            <strong>군인법·보안 규정 위반 위험</strong>
+            <p>본인도 모르게 제재 대상과 거래 시 군인법 위반, 보안 사고로 이어질 수 있습니다. 사후 처벌보다 사전 예방이 필수입니다.</p>
+          </div>
+        </div>
+        <div class="sw-item">
+          <div class="sw-icon ri4"><i class="fas fa-skull-crossbones"></i></div>
+          <div class="sw-content">
+            <strong>북한 연계 지갑·제재 대상 노출</strong>
+            <p>북한은 전 세계 최대 규모 암호화폐 탈취 국가. 텔레그램 OTC 거래 중 본인도 모르게 북한 연계 지갑과 연결될 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OTC vs 거래소 비교 차트 -->
+    <div class="chart-row fade-in">
+      <div class="chart-card">
+        <h3><i class="fas fa-chart-bar"></i> OTC vs 거래소 거래 규모 비교 (2024)</h3>
+        <div style="height:280px;position:relative;"><canvas id="otcChart"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3><i class="fas fa-chart-pie"></i> OTC 거래 위험 노출 유형</h3>
+        <div style="height:280px;position:relative;"><canvas id="riskChart"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ OTC DANGER SECTION ══════ -->
+<section class="section otc-section" id="otc">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-badge danger-badge"><i class="fas fa-triangle-exclamation"></i> OTC 위험 실태</div>
+      <h2>OTC 장외거래, <span class="highlight-red">왜 위험한가</span></h2>
+      <p>거래소는 엄격한 KYC·AML 규정이 적용되지만, 장외거래(OTC)는 완전한 규제 사각지대입니다.<br/>한국이 세계 2위 OTC 자금세탁 국가가 된 이유가 바로 여기에 있습니다.</p>
+    </div>
+
+    <div class="otc-compare-visual fade-in">
+      <div class="otcv-col otcv-exchange">
+        <div class="otcv-header safe-header"><i class="fas fa-building-columns"></i> 거래소 거래</div>
+        <div class="otcv-stat">전체 거래의 <strong>~20%</strong></div>
+        <ul class="otcv-list safe-list">
+          <li><i class="fas fa-check"></i> KYC 신원 확인 의무</li>
+          <li><i class="fas fa-check"></i> AML 자동 모니터링</li>
+          <li><i class="fas fa-check"></i> 규제기관 감독</li>
+          <li><i class="fas fa-check"></i> 제재 필터링 내장</li>
+          <li><i class="fas fa-check"></i> 거래 기록 보존</li>
+        </ul>
+        <div class="otcv-verdict safe-verdict">✅ 상대적으로 안전</div>
+      </div>
+
+      <div class="otcv-vs">
+        <div class="vs-circle">VS</div>
+        <div class="vs-arrow"><i class="fas fa-scale-unbalanced-flip"></i></div>
+      </div>
+
+      <div class="otcv-col otcv-otc">
+        <div class="otcv-header danger-header"><i class="fas fa-skull-crossbones"></i> OTC 장외거래</div>
+        <div class="otcv-stat danger-stat">전체 거래의 <strong>~80%+</strong></div>
+        <ul class="otcv-list danger-list">
+          <li><i class="fas fa-xmark"></i> 신원 확인 없음</li>
+          <li><i class="fas fa-xmark"></i> AML 감시 없음</li>
+          <li><i class="fas fa-xmark"></i> 규제 완전 공백</li>
+          <li><i class="fas fa-xmark"></i> 제재 필터링 없음</li>
+          <li><i class="fas fa-xmark"></i> 주요 채널: <strong>텔레그램</strong></li>
+        </ul>
+        <div class="otcv-verdict danger-verdict">🔴 완전 무방비 — 위험 사각지대</div>
+      </div>
+    </div>
+
+    <!-- 텔레그램 OTC 실태 -->
+    <div class="tg-otc-card fade-in">
+      <div class="tg-otc-left">
+        <div class="tg-icon"><i class="fab fa-telegram"></i></div>
+        <div class="tg-text">
+          <h3>텔레그램 — 전 세계 최대 OTC 암호화폐 거래 창구</h3>
+          <p>전 세계 최고 MAU(Monthly Active Users)를 자랑하는 텔레그램은 현재 가장 많은 OTC 암호화폐 거래가 이루어지는 플랫폼입니다. 비공개 그룹과 채널을 통해 일 수천만 건의 장외거래가 발생하지만, 그 어떤 안전망도 존재하지 않습니다.</p>
+          <div class="tg-stats">
+            <div class="tg-stat"><span class="tg-num">9억+</span><span>월간 활성 사용자</span></div>
+            <div class="tg-stat"><span class="tg-num">#1</span><span>OTC 거래 플랫폼</span></div>
+            <div class="tg-stat"><span class="tg-num">0%</span><span>안전장치</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="tg-otc-right">
+        <div class="tg-danger-list">
+          <div class="tdl-item"><i class="fas fa-user-secret"></i><span>익명 거래상대 — 제재 대상 여부 알 수 없음</span></div>
+          <div class="tdl-item"><i class="fas fa-money-bill-transfer"></i><span>자금세탁 지갑 수시 유통</span></div>
+          <div class="tdl-item"><i class="fas fa-bomb"></i><span>북한·이란·러시아 제재 회피 거래 활성화</span></div>
+          <div class="tdl-item"><i class="fas fa-fish-fins"></i><span>피싱·사기·러그풀 피해 다수 발생</span></div>
+          <div class="tdl-item"><i class="fas fa-shield-halved"></i><span class="highlight-cyan">SanctionGuard™ — 텔레그램 OTC 사전 스크리닝 제공</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ SOLUTION SECTION ══════ -->
+<section class="section solution-section" id="solution">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-badge chainalysis-badge-sm"><i class="fas fa-link"></i> Chainalysis 공식 파트너 개발</div>
+      <h2><span class="highlight-cyan">SANCTIONGUARD™</span>가 해결합니다</h2>
+      <p>세계 최고 블록체인 인텔리전스 기업 <strong>Chainalysis 한국 공식 파트너사</strong>가 직접 개발한 장병 전용 OTC 안전 스크리닝 솔루션.</p>
+    </div>
+
+    <!-- Chainalysis 파트너십 강조 -->
+    <div class="chain-partner-banner fade-in">
+      <div class="cpb-left">
+        <div class="cpb-logo"><i class="fas fa-link"></i></div>
+        <div class="cpb-text">
+          <div class="cpb-title">Chainalysis™ 한국 공식 파트너사 자체 개발</div>
+          <div class="cpb-sub">세계 최고 블록체인 인텔리전스 · 수사 · 추적 솔루션 기반</div>
+        </div>
+      </div>
+      <div class="cpb-right">
+        <div class="cpb-item"><i class="fas fa-check-circle"></i> 글로벌 정보기관 채택 기술</div>
+        <div class="cpb-item"><i class="fas fa-check-circle"></i> FBI·DEA·국세청 활용 수사 솔루션</div>
+        <div class="cpb-item"><i class="fas fa-check-circle"></i> 실시간 온체인 인텔리전스 분석</div>
+      </div>
+    </div>
+
+    <!-- 솔루션 4카드 -->
+    <div class="solution-grid fade-in">
+      <div class="sol-card">
+        <div class="sol-num">01</div>
+        <div class="sol-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+        <h4>OTC 전용 사전 스크리닝</h4>
+        <p>거래소에서는 불가능한 OTC 장외거래 대상자를 거래 <strong>전</strong>에 12개 국제 제재 DB로 즉시 검증합니다.</p>
+        <div class="sol-tags"><span>OFAC</span><span>UN</span><span>EU</span><span>HMT</span><span>+8</span></div>
+      </div>
+      <div class="sol-card sol-featured">
+        <div class="sol-feat-label">CORE</div>
+        <div class="sol-num">02</div>
+        <div class="sol-icon tg-sol-icon"><i class="fab fa-telegram"></i></div>
+        <h4>텔레그램 OTC 실시간 조회</h4>
+        <p>텔레그램 채널 내에서 거래 상대방 정보를 바로 조회. OTC 거래의 주요 창구인 텔레그램에서 직접 스크리닝합니다.</p>
+        <div class="sol-tags tg-tags"><span>@SanctionGuard_Bot</span><span>즉시 조회</span></div>
+      </div>
+      <div class="sol-card sol-featured2">
+        <div class="sol-feat-label2">KAKAO</div>
+        <div class="sol-num">03</div>
+        <div class="sol-icon kk-sol-icon"><i class="fas fa-comment-dots"></i></div>
+        <h4>카카오톡 챗봇 간편 조회</h4>
+        <p>국내 1위 소셜 메신저 카카오톡으로 장병들이 가장 친숙한 환경에서 즉시 제재 조회 결과를 받아볼 수 있습니다.</p>
+        <div class="sol-tags kk-tags"><span>카카오 채널</span><span>국내 1위</span></div>
+      </div>
+      <div class="sol-card">
+        <div class="sol-num">04</div>
+        <div class="sol-icon chain-sol-icon"><i class="fas fa-brain"></i></div>
+        <h4>Chainalysis 기반 AI 분석</h4>
+        <p>단순 블랙리스트 조회를 넘어, Chainalysis의 온체인 인텔리전스로 거래 이력·패턴·연관 위험도까지 분석합니다.</p>
+        <div class="sol-tags chain-tags"><span>온체인 분석</span><span>패턴 감지</span><span>AI</span></div>
+      </div>
+    </div>
+
+    <!-- 메신저 비교 -->
+    <div class="messenger-compare fade-in">
+      <h3 class="mc-title"><i class="fas fa-comments"></i> 장병이 가장 편한 방법으로 — 두 가지 채널 동시 지원</h3>
+      <div class="mc-grid">
+        <div class="mc-card mc-tg">
+          <div class="mc-logo"><i class="fab fa-telegram"></i></div>
+          <h4>텔레그램</h4>
+          <div class="mc-stat-row">
+            <span><strong>9억+</strong> MAU</span>
+            <span><strong>#1</strong> OTC 채널</span>
+          </div>
+          <p>OTC 거래가 이루어지는 바로 그 현장에서, 거래 직전 즉시 스크리닝. 세계 어디서든 사용 가능.</p>
+          <div class="mc-use">💡 OTC 거래 직전 상대방 주소 즉시 조회</div>
+        </div>
+        <div class="mc-vs"><i class="fas fa-plus"></i></div>
+        <div class="mc-card mc-kk">
+          <div class="mc-logo"><i class="fas fa-comment-dots"></i></div>
+          <h4>카카오톡</h4>
+          <div class="mc-stat-row">
+            <span><strong>4,900만</strong> 국내 사용자</span>
+            <span><strong>국내 1위</strong></span>
+          </div>
+          <p>한국인이라면 누구나 쓰는 카카오톡으로 챗봇 대화 방식으로 간편하게 제재 조회.</p>
+          <div class="mc-use">💡 카카오 채널 추가 후 즉시 무료 사용</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ HOW IT WORKS ══════ -->
+<section class="section how-section" id="how">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-badge info-badge"><i class="fas fa-circle-play"></i> 이용 방법</div>
+      <h2>단 <span class="highlight-cyan">30초</span>면 충분합니다</h2>
+      <p>복잡한 설치 없이, 텔레그램 또는 카카오톡에서 바로 사용하세요.</p>
+    </div>
+
+    <div class="how-steps fade-in">
+      <div class="how-step">
+        <div class="hs-num">01</div>
+        <div class="hs-icon"><i class="fas fa-magnifying-glass"></i></div>
+        <h4>거래 전 의심 주소 확보</h4>
+        <p>OTC 거래 상대방의 <strong>지갑 주소</strong>, <strong>텔레그램 계정</strong>, 또는 <strong>거래소 ID</strong>를 준비하세요.</p>
+        <div class="hs-tip">⚠️ 거래 완료 후엔 이미 늦습니다. <strong>반드시 사전 확인!</strong></div>
+      </div>
+      <div class="hs-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="how-step">
+        <div class="hs-num">02</div>
+        <div class="hs-icon tg-icon-step"><i class="fab fa-telegram"></i></div>
+        <h4>텔레그램 또는 카카오톡 전송</h4>
+        <p>SanctionGuard™ 봇에게 주소를 전송하면 <strong>즉시 12개 국제 제재 DB</strong>와 대조합니다.</p>
+        <div class="hs-channels">
+          <span><i class="fab fa-telegram"></i> @SanctionGuard_Bot</span>
+          <span><i class="fas fa-comment-dots"></i> 카카오 채널</span>
+        </div>
+      </div>
+      <div class="hs-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="how-step">
+        <div class="hs-num">03</div>
+        <div class="hs-icon safe-icon-step"><i class="fas fa-circle-check"></i></div>
+        <h4>1초 내 결과 수신</h4>
+        <p>CLEAR(안전) 또는 ALERT(위험) 결과와 함께 위험도 점수, 연관 제재 목록을 즉시 제공합니다.</p>
+        <div class="hs-result-demo">
+          <span class="hsr-safe">🟢 CLEAR — 안전 거래 가능</span>
+          <span class="hsr-danger">🔴 ALERT — 제재 대상 감지!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카카오 챗봇 데모 -->
+    <div class="kakao-demo-wrap fade-in">
+      <div class="kdw-label">
+        <i class="fas fa-comment-dots kk-color"></i> 카카오톡 챗봇 · 실제 조회 화면
+        &nbsp;&nbsp;
+        <i class="fab fa-telegram tg-color"></i> 텔레그램 봇 동일 지원
+      </div>
+      <div class="kakao-phone">
+        <div class="kp-header">
+          <i class="fas fa-chevron-left"></i>
+          <span>SanctionGuard™ 공식 채널</span>
+          <i class="fas fa-magnifying-glass"></i>
+        </div>
+        <div class="kp-chat">
+          <div class="kp-date">오늘</div>
+          <div class="kp-bot">
+            <div class="kp-av">SG</div>
+            <div class="kp-bub">안녕하세요, SanctionGuard™입니다! 🛡️<br/>OTC 장외거래 전 제재 조회 서비스를 제공합니다.<br/>조회할 지갑 주소 또는 텔레그램 계정을 입력해 주세요.</div>
+            <div class="kp-time">오전 9:41</div>
+          </div>
+          <div class="kp-user">
+            <div class="kp-bub yellow">텔레그램 @crypto_trader_kr 조회해줘</div>
+            <div class="kp-time">오전 9:42</div>
+          </div>
+          <div class="kp-bot">
+            <div class="kp-av">SG</div>
+            <div class="kp-bub">🔍 Chainalysis 인텔리전스 기반<br/>12개 국제 제재 DB 실시간 분석 중...</div>
+            <div class="kp-time">오전 9:42</div>
+          </div>
+          <div class="kp-bot">
+            <div class="kp-av">SG</div>
+            <div class="kp-card">
+              <div class="kpc-title"><i class="fas fa-check-circle"></i> 제재 조회 결과</div>
+              <div class="kpc-checks">
+                <span class="kpc-ok"><i class="fas fa-check"></i> OFAC</span>
+                <span class="kpc-ok"><i class="fas fa-check"></i> UN</span>
+                <span class="kpc-ok"><i class="fas fa-check"></i> EU</span>
+                <span class="kpc-ok"><i class="fas fa-check"></i> HMT</span>
+              </div>
+              <div class="kpc-score">위험도: <strong class="kpc-safe">낮음 (98/100)</strong></div>
+              <div class="kpc-clear">🟢 CLEAR — 안전한 거래 가능</div>
+              <div class="kpc-powered">Powered by Chainalysis™</div>
+            </div>
+            <div class="kp-time">오전 9:42</div>
+          </div>
+        </div>
+        <div class="kp-input">
+          <span class="kp-plus"><i class="fas fa-plus"></i></span>
+          <input type="text" placeholder="메시지 입력" readonly/>
+          <span class="kp-send"><i class="fas fa-paper-plane"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FEATURES TABS ══════ -->
+<section class="section features-section" id="features">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-badge purple-badge"><i class="fas fa-star"></i> 주요 기능</div>
+      <h2>장병을 위한 <span class="highlight-cyan">완전한 OTC 보호</span></h2>
+    </div>
+    <div class="features-tabs fade-in">
+      <div class="tab-btns">
+        <button class="tab-btn active" data-tab="otc-screen"><i class="fas fa-handshake"></i> OTC 안전망</button>
+        <button class="tab-btn" data-tab="realtime"><i class="fas fa-bolt"></i> 실시간 DB</button>
+        <button class="tab-btn" data-tab="database"><i class="fas fa-database"></i> 제재 DB</button>
+        <button class="tab-btn" data-tab="privacy"><i class="fas fa-user-shield"></i> 프라이버시</button>
+      </div>
+      <div class="tab-contents">
+
+        <!-- TAB 1: OTC 안전망 -->
+        <div class="tab-content active" id="tab-otc-screen">
+          <div class="tab-inner tab-inner-otc">
+            <div class="tab-text">
+              <div class="otc-label"><i class="fas fa-triangle-exclamation"></i> 장외거래(OTC)의 위험, 알고 계십니까?</div>
+              <h3>세계 최초, <span class="highlight-cyan">OTC 전용</span> 사전 스크리닝</h3>
+              <p>암호화폐 거래 규모의 <strong>80% 이상</strong>을 차지하는 장외거래(OTC)는 거래소와 달리 안전망이 전혀 없는 위험 지대입니다. <br/><br/>SanctionGuard™는 <strong>세계 최고 수준의 AML/CFT 사전 스크리닝</strong>을 OTC 거래에 최초로 적용하였으며, <strong>Chainalysis 한국 공식 파트너사</strong>가 직접 개발한 검증된 기술입니다.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> OTC 특화 사전 스크리닝 — 거래소 대비 수십 배 큰 시장 보호</li>
+                <li><i class="fas fa-check"></i> 텔레그램(전 세계 최고 MAU · 최대 OTC 거래 채널) 직접 지원</li>
+                <li><i class="fas fa-check"></i> 카카오톡(국내 1위 소셜 메신저) 챗봇 — 접근성·안전성 동시 충족</li>
+                <li><i class="fas fa-check"></i> Chainalysis 기반 — FBI·DEA·국세청 채택 세계 최고 블록체인 인텔리전스</li>
+                <li><i class="fas fa-check"></i> 글로벌 정보기관·수사기관 동급 추적 인프라 보유</li>
+              </ul>
+            </div>
+            <div class="tab-visual">
+              <div class="otc-visual-wrap">
+                <div class="otc-compare-mini">
+                  <div class="ocm-title">암호화폐 거래 규모 비교</div>
+                  <div class="otc-bar-wrap">
+                    <div class="otc-bar-label">거래소 거래</div>
+                    <div class="otc-bar"><div class="otc-bar-fill exchange" style="width:20%">~20%</div></div>
+                    <div class="otc-bar-note safe-note"><i class="fas fa-shield-halved"></i> 안전망 존재</div>
+                  </div>
+                  <div class="otc-bar-wrap">
+                    <div class="otc-bar-label danger-label">장외거래 OTC ← 여기!</div>
+                    <div class="otc-bar"><div class="otc-bar-fill otc" style="width:80%">80%+</div></div>
+                    <div class="otc-bar-note danger-note"><i class="fas fa-triangle-exclamation"></i> 안전망 전무 — 위험 사각지대</div>
+                  </div>
+                </div>
+                <div class="chainalysis-badge">
+                  <div class="chain-logo"><i class="fas fa-link"></i></div>
+                  <div class="chain-text">
+                    <span class="chain-title">Chainalysis™ 한국 공식 파트너</span>
+                    <span class="chain-sub">세계 최고 블록체인 인텔리전스 · 수사 · 추적 솔루션</span>
+                  </div>
+                </div>
+                <div class="messenger-badges">
+                  <div class="msg-badge telegram"><i class="fab fa-telegram"></i><span>텔레그램<br/><small>세계 최고 MAU</small></span></div>
+                  <div class="msg-badge kakao"><i class="fas fa-comment-dots"></i><span>카카오톡<br/><small>국내 1위</small></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: 실시간 -->
+        <div class="tab-content" id="tab-realtime">
+          <div class="tab-inner">
+            <div class="tab-text">
+              <h3>실시간 제재 DB 업데이트</h3>
+              <p>전 세계 규제 기관의 제재 목록이 24시간 실시간으로 업데이트되어 항상 최신 정보로 조회합니다.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> 24/7 실시간 데이터 동기화</li>
+                <li><i class="fas fa-check"></i> 새로운 제재 즉시 반영</li>
+                <li><i class="fas fa-check"></i> 평균 응답 시간 &lt; 1초</li>
+                <li><i class="fas fa-check"></i> 99.9% 가동률 보장</li>
+                <li><i class="fas fa-check"></i> 자동 위험 알림 발송</li>
+              </ul>
+            </div>
+            <div class="tab-visual">
+              <div class="realtime-display">
+                <div class="rt-item pulse"><i class="fas fa-circle"></i> OFAC 업데이트 <span>방금 전</span></div>
+                <div class="rt-item"><i class="fas fa-circle"></i> UN DB 동기화 <span>2분 전</span></div>
+                <div class="rt-item"><i class="fas fa-circle"></i> EU 리스트 확인 <span>5분 전</span></div>
+                <div class="rt-item"><i class="fas fa-circle"></i> HMT 갱신 완료 <span>12분 전</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: 제재 DB -->
+        <div class="tab-content" id="tab-database">
+          <div class="tab-inner">
+            <div class="tab-text">
+              <h3>다국어 글로벌 제재 DB</h3>
+              <p>12개국 이상의 제재 기관 데이터베이스를 통합하여 포괄적인 제재 조회를 제공합니다.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> 12개+ 국제 제재 기관 연동</li>
+                <li><i class="fas fa-check"></i> PEP (정치적 노출 인물) 검색</li>
+                <li><i class="fas fa-check"></i> 블랙리스트 지갑 주소 대조</li>
+                <li><i class="fas fa-check"></i> 북한·이란·러시아 특별 감시</li>
+                <li><i class="fas fa-check"></i> 다국어 이름 변형 매칭</li>
+              </ul>
+            </div>
+            <div class="tab-visual">
+              <div class="db-grid">
+                <div class="db-badge">🇺🇸 OFAC</div><div class="db-badge">🇺🇳 UN</div>
+                <div class="db-badge">🇪🇺 EU</div><div class="db-badge">🇬🇧 HMT</div>
+                <div class="db-badge">🇰🇷 금감원</div><div class="db-badge">🇯🇵 FSA</div>
+                <div class="db-badge">🇦🇺 DFAT</div><div class="db-badge">+ 5개</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: 프라이버시 -->
+        <div class="tab-content" id="tab-privacy">
+          <div class="tab-inner">
+            <div class="tab-text">
+              <h3>완전한 프라이버시 보호</h3>
+              <p>장병의 개인 거래 정보는 절대 외부에 유출되지 않으며, 조회 기록도 암호화하여 보관합니다.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> 개인식별정보 비수집 원칙</li>
+                <li><i class="fas fa-check"></i> 조회 기록 로컬 저장 (서버 미전송)</li>
+                <li><i class="fas fa-check"></i> 개인정보보호법 완전 준수</li>
+                <li><i class="fas fa-check"></i> 독립 보안 감사 정기 실시</li>
+                <li><i class="fas fa-check"></i> GDPR·국내법 이중 준수</li>
+              </ul>
+            </div>
+            <div class="tab-visual">
+              <div class="privacy-display">
+                <div class="priv-item"><i class="fas fa-eye-slash"></i><span>비식별화</span></div>
+                <div class="priv-item"><i class="fas fa-lock"></i><span>E2E 암호화</span></div>
+                <div class="priv-item"><i class="fas fa-trash"></i><span>자동 삭제</span></div>
+                <div class="priv-item"><i class="fas fa-file-shield"></i><span>GDPR 준수</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ TESTIMONIALS ══════ -->
+<section class="section testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-badge info-badge"><i class="fas fa-quote-left"></i> 사용 후기</div>
+      <h2>장병들이 <span class="highlight-cyan">직접 경험했습니다</span></h2>
+    </div>
+    <div class="testimonials-grid fade-in">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"텔레그램 OTC 거래 상대방 주소를 넣었는데 바로 ALERT가 떴어요. 알고 보니 제재 대상 지갑이었습니다. 정말 큰일 날 뻔했어요."</p>
+        <div class="testi-who"><div class="testi-av"><i class="fas fa-user"></i></div><div><strong>김○○ 병장</strong><span>육군 제○○사단</span></div></div>
+      </div>
+      <div class="testi-card testi-feat">
+        <div class="testi-stars">★★★★★</div>
+        <p>"카카오톡에서 바로 조회할 수 있어서 너무 편해요. 텔레그램 OTC 그룹에서 거래하기 전에 항상 SanctionGuard로 먼저 확인합니다. 필수 앱입니다."</p>
+        <div class="testi-who"><div class="testi-av"><i class="fas fa-user"></i></div><div><strong>이○○ 상병</strong><span>공군 제○○비행단</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"장외거래 위험성을 몰랐는데, 이 앱 덕분에 눈이 떠졌어요. Chainalysis 기반이라 신뢰도가 높고, 조회 결과도 상세하게 나와서 좋습니다."</p>
+        <div class="testi-who"><div class="testi-av"><i class="fas fa-user"></i></div><div><strong>박○○ 일병</strong><span>해군 제○○함대</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★☆</div>
+        <p>"OTC 거래를 많이 하는데, 이제 거래 전에 무조건 먼저 조회합니다. 전우들한테도 다 알려줬어요. 한국이 자금세탁 세계 2위라는 게 충격이었습니다."</p>
+        <div class="testi-who"><div class="testi-av"><i class="fas fa-user"></i></div><div><strong>최○○ 이병</strong><span>육군 제○○여단</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FAQ ══════ -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-badge info-badge"><i class="fas fa-circle-question"></i> FAQ</div>
+      <h2>자주 묻는 <span class="highlight-cyan">질문</span></h2>
+    </div>
+    <div class="faq-list fade-in" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q"><span>OTC 장외거래가 거래소 거래보다 더 위험한가요?</span><i class="fas fa-plus faq-icon"></i></button>
+        <div class="faq-a"><p>네, 훨씬 더 위험합니다. 거래소는 KYC·AML 규정이 의무 적용되지만, OTC는 완전한 규제 사각지대입니다. 전체 암호화폐 거래량의 80% 이상을 OTC가 차지하지만 안전망은 전혀 없습니다. 한국이 OTC 자금세탁 세계 2위인 것도 이 때문입니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>텔레그램에서 어떻게 사용하나요?</span><i class="fas fa-plus faq-icon"></i></button>
+        <div class="faq-a"><p>텔레그램에서 @SanctionGuard_Bot을 검색하거나 초대 링크로 시작하면 됩니다. OTC 거래 상대방의 지갑 주소 또는 텔레그램 계정을 메시지로 전송하면 1초 내로 제재 조회 결과가 반환됩니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Chainalysis와의 관계는 무엇인가요?</span><i class="fas fa-plus faq-icon"></i></button>
+        <div class="faq-a"><p>SanctionGuard™는 세계 최고 블록체인 인텔리전스 기업인 Chainalysis의 <strong>한국 공식 파트너사</strong>가 직접 개발한 솔루션입니다. Chainalysis 기술은 FBI, DEA, 국세청, 각국 수사기관이 채택한 세계 최고 수준의 블록체인 수사·추적 기술입니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>모르고 제재 대상과 거래하면 어떻게 되나요?</span><i class="fas fa-plus faq-icon"></i></button>
+        <div class="faq-a"><p>본인도 모르게 제재 대상(북한 연계, OFAC 지정 등)과 거래할 경우 자금이 동결되거나 수사 대상이 될 수 있습니다. 특히 군인 신분에서는 보안 사고, 군인법 위반으로 처벌받을 수 있습니다. 사전 스크리닝이 필수인 이유입니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>완전 무료인가요?</span><i class="fas fa-plus faq-icon"></i></button>
+        <div class="faq-a"><p>현역 군 장병은 기본 스크리닝 기능을 완전히 무료로 이용할 수 있습니다. 텔레그램 봇과 카카오톡 챗봇 모두 무료로 제공됩니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>한국이 OTC 자금세탁 세계 2위인 이유는 무엇인가요?</span><i class="fas fa-plus faq-icon"></i></button>
+        <div class="faq-a"><p>Chainalysis 보고서에 따르면 한국은 높은 암호화폐 채택률과 OTC 거래 활성화, 상대적으로 미흡한 규제 집행이 맞물려 OTC를 통한 자금세탁이 세계 2위 수준에 이르렀습니다. 이는 장병들이 일상적으로 참여하는 OTC 거래에서도 이러한 위험이 상존함을 의미합니다.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>북한 연계 지갑인지 어떻게 알 수 있나요?</span><i class="fas fa-plus faq-icon"></i></button>
+        <div class="faq-a"><p>Chainalysis 인텔리전스를 기반으로 북한 Lazarus Group 등 국가 지원 해커 그룹의 알려진 지갑 주소, 믹서, 연관 주소 패턴을 즉시 탐지합니다. OFAC 및 각국 제재 목록에 등재된 북한 연계 주소 수천 건이 실시간으로 업데이트됩니다.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ CTA ══════ -->
+<section class="section cta-section" id="cta">
+  <div class="container">
+    <div class="cta-inner fade-in">
+      <div class="cta-urgency">
+        <i class="fas fa-radiation"></i>
+        <span>한국 OTC 자금세탁 세계 2위 · 지금 이 순간에도 위험에 노출되어 있습니다</span>
+      </div>
+      <h2>거래 <span class="highlight-red">전</span>에 확인하세요.<br/>거래 <span class="text-gray">후</span>엔 이미 늦습니다.</h2>
+      <p>SanctionGuard™는 Chainalysis 한국 공식 파트너사가 개발한 세계 최고 수준의 OTC 사전 스크리닝 솔루션입니다.<br/>텔레그램과 카카오톡으로 지금 바로 무료 시작하세요.</p>
+      <div class="cta-btns">
+        <a href="#" class="btn btn-primary btn-glow btn-xl"><i class="fab fa-telegram"></i> 텔레그램 봇 시작</a>
+        <a href="#" class="btn btn-kakao btn-xl"><i class="fas fa-comment-dots"></i> 카카오톡 채널 추가</a>
+        <a href="#" class="btn btn-dark btn-xl"><i class="fab fa-apple"></i> App Store</a>
+        <a href="#" class="btn btn-dark btn-xl"><i class="fab fa-google-play"></i> Google Play</a>
+      </div>
+      <div class="cta-chain-badge">
+        <i class="fas fa-link"></i>
+        <span>Powered by <strong>Chainalysis™</strong> — 세계 최고 블록체인 인텔리전스 기술 기반</span>
+      </div>
+      <p class="cta-note"><i class="fas fa-lock"></i> 완전 무료 · 장병 전용 · 개인정보 보호 · 2025년 5월 정식 출시</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FOOTER ══════ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo"><i class="fas fa-shield-halved"></i> Sanction<span class="accent">Guard</span>™</div>
+      <p>한국군 장병을 위한 세계 최고 수준 OTC 암호화폐 AML/CFT 사전 스크리닝 솔루션.<br/>Chainalysis 한국 공식 파트너사 개발.</p>
+      <div class="footer-chain"><i class="fas fa-link"></i> Chainalysis™ 한국 공식 파트너</div>
+      <div class="social-links">
+        <a href="#" aria-label="텔레그램"><i class="fab fa-telegram"></i></a>
+        <a href="#" aria-label="카카오톡"><i class="fas fa-comment-dots"></i></a>
+        <a href="#" aria-label="인스타그램"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="이메일"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-links-group">
+      <h5>서비스</h5>
+      <ul>
+        <li><a href="#otc">OTC 위험 실태</a></li>
+        <li><a href="#solution">솔루션</a></li>
+        <li><a href="#how">이용 방법</a></li>
+        <li><a href="#features">주요 기능</a></li>
+      </ul>
+    </div>
+    <div class="footer-links-group">
+      <h5>채널</h5>
+      <ul>
+        <li><a href="#"><i class="fab fa-telegram"></i> 텔레그램 봇</a></li>
+        <li><a href="#"><i class="fas fa-comment-dots"></i> 카카오톡 채널</a></li>
+        <li><a href="#"><i class="fab fa-apple"></i> iOS 앱</a></li>
+        <li><a href="#"><i class="fab fa-android"></i> Android 앱</a></li>
+      </ul>
+    </div>
+    <div class="footer-links-group">
+      <h5>법적 고지</h5>
+      <ul>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">보안 정책</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bot-inner">
+      <span>© 2025 SanctionGuard™ · 장병 전용 OTC 암호화폐 안전거래 조회 앱</span>
+      <span>본 서비스는 정보 제공 목적이며 투자 조언이 아닙니다.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
